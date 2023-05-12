@@ -7,5 +7,5 @@ export default {
   enhanceApp(ctx) {
     // register your custom global components
     ctx.app.config.unwrapInjectedRef = true
-  }
+  },
 }

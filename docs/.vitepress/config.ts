@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Vue3 Split",
   description: "Vue3 wrapper for Split.js",
   base: "/vue3-split/",
+  appearance: 'dark',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
