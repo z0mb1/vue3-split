@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-docs
+docs/.vitepress/cache
+docs/.vitepress/dist
 .npmrc
