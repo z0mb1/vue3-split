@@ -8,7 +8,7 @@
 import Split from 'split.js'
 import { ref, provide, watch, onBeforeUnmount } from 'vue'
 
-interface Props {
+export interface Props {
   sizes?: number[],
   minSize?: number,
   maxSize?: number,
