@@ -30,17 +30,17 @@
     "dist"
   ],
   "types": "./dist/types/index.d.ts",
-  "module": "./dist/vue-split.es.js",
+  "module": "./dist/vue3-split.es.js",
   "exports": {
     ".": {
-      "import": "./dist/vue-split.es.js",
-      "require": "./dist/vue-split.cjs.js"
+      "import": "./dist/vue3-split.es.js",
+      "require": "./dist/vue3-split.cjs.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/z0mb1/vue-split.git"
+    "url": "git+https://github.com/z0mb1/vue3-split.git"
   }
 }
