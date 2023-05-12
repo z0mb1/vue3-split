@@ -17,7 +17,7 @@ hero:
 features:
   - icon: <span class="mdi mdi-feather"></span>
     title: Tiny
-    details: Each is between 1-2kb gzipped.
+    details: Each is between ~3kb gzipped.
   - icon: <span class="mdi mdi-bike-fast"></span>
     title: Fast
     details: No overhead or attached window event listeners, uses pure CSS for resizing.

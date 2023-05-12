@@ -35,6 +35,15 @@ Below are examples of minimal css code that can be used to display components co
   height: 100%;
 }
 
+.vue-split-item {
+  height: 100%;
+  overflow: hidden;
+}
+
+.vue-split-content {
+  height: 100%;
+}
+
 .gutter {
   background-color: #eee;
   background-repeat: no-repeat;
@@ -49,14 +58,5 @@ Below are examples of minimal css code that can be used to display components co
 .gutter.gutter-vertical {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
   cursor: row-resize;
-}
-
-.vue-split-item {
-  height: 100%;
-  overflow: hidden;
-}
-
-.vue-split-content {
-  height: 100%;
 }
 ```

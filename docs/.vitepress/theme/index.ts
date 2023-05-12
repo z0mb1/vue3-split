@@ -1,5 +1,6 @@
 // .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme'
+import '@mdi/font/css/materialdesignicons.css'
 
 export default {
   extends: DefaultTheme,

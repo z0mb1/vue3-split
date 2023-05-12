@@ -1,18 +1,90 @@
-# Vue 3 + TypeScript + Vite
+# Vue3 Split
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vue3 Split is Vue JS wrapper for [Split.js](https://github.com/nathancahill/split/tree/master/packages/splitjs)
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
+![npm bundle size](https://img.shields.io/bundlephobia/min/vue3-split)
 
-## Type Support For `.vue` Imports in TS
+## Installation
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+```
+npm i vue3-split
+```
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+```
+yarn add vue3-split
+```
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+```
+pnpm i vue3-split
+```
+
+---
+
+## Demo & Documentation
+> [https://z0mb1.github.io/vue3-split/](https://z0mb1.github.io/vue3-split/)
+>
+
+## Simple usage
+``` html
+<script setup lang="ts">
+import { SplitWrapper, SplitItem } from 'vue-split'
+
+</script>
+
+<template>
+  <SplitWrapper class="vue-split horizontal">
+    <SplitItem class="vue-split-item">
+      <div class="vue-split-content">
+        ...
+      </div>
+    </SplitItem>
+    <SplitItem class="vue-split-item">
+      <div class="vue-split-content">
+        ...
+      </div>
+    </SplitItem>
+  </SplitWrapper>
+</template>
+```
+
+```css
+.vue-split {
+  height: 100%;
+}
+
+.vue-split.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.vue-split.horizontal .vue-split-content {
+  height: 100%;
+}
+
+.vue-split-item {
+  height: 100%;
+  overflow: hidden;
+}
+
+.vue-split-content {
+  height: 100%;
+}
+
+.gutter {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+  cursor: col-resize;
+}
+
+.gutter.gutter-vertical {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+  cursor: row-resize;
+}
+```
